@@ -32,12 +32,12 @@ public class Scheduler {
             Product p = productList.get(i);
 
             String title = p.getTitle();
-            //String resultString = naverShopSearch.search(title);
-            //List<ItemDto> itemDtoList = naverShopSearch.fromJSONtoItems(resultString);
-            //ItemDto itemDto = itemDtoList.get(0);
+            String resultString = naverShopSearch.search(title);
+            List<ItemDto> itemDtoList = naverShopSearch.fromJSONtoItems(resultString);
 
+            ItemDto itemDto = itemDtoList.get(0);
             Long id = p.getId();
-            //productService.updateByService(id, itemDto);
+            productService.updateByService(id, itemDto);
         }
     }
 

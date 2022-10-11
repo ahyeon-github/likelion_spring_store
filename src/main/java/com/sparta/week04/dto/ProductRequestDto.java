@@ -1,4 +1,4 @@
-package com.sparta.week04.Repository;
+package com.sparta.week04.dto;
 import lombok.Getter;
 
 @Getter

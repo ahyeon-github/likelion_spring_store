@@ -1,5 +1,4 @@
-package com.sparta.week04.Repository;
-import com.fasterxml.jackson.databind.util.JSONWrappedObject;
+package com.sparta.week04.dto;
 import lombok.Getter;
 import org.json.JSONObject;
 
