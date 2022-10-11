@@ -1,10 +1,7 @@
-package com.sparta.week04.dto;
-
-
-
-//import org.json.JSONObject;
-
+package com.sparta.week04.Repository;
+import com.fasterxml.jackson.databind.util.JSONWrappedObject;
 import lombok.Getter;
+import org.json.JSONObject;
 
 @Getter
 public class ItemDto {
@@ -13,10 +10,10 @@ public class ItemDto {
     private String image;
     private int lprice;
 
-    //public ItemDto(JSONObject itemJson) {
-        //this.title = itemJson.getString("title");
-        //this.link = itemJson.getString("link");
-        //this.image = itemJson.getString("image");
-        //this.lprice = itemJson.getInt("lprice");
-    //}
+    public ItemDto(JSONObject itemJson) {
+        this.title = itemJson.getString("title");
+        this.link = itemJson.getString("link");
+        this.image = itemJson.getString("image");
+        this.lprice = itemJson.getInt("lprice");
+    }
 }
